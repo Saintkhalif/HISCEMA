@@ -94,3 +94,8 @@ Bachelor of Information Technology | South Eastern Kenya University
 - Official Flask documentation: https://flask.palletsprojects.com/
 - My personal determination and grit 💪🔥
 
+## ## PROTOTYPE PRESENTATION VIDEO
+
+Watch the prototype demo video here:
+[View Prototype Video]
+https://youtu.be/1jASmKp3lik
