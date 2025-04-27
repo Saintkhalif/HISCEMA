@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Health Info System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body style="background: url('{{ url_for('static', filename='images/bg.jpg') }}') no-repeat center center fixed; background-size: cover;">
+    <h1>Health Information System</h1>
+    <a href="{{ url_for('home') }}">Home</a> |
+    <a href="{{ url_for('add_program') }}">Add Program</a> |
+    <a href="{{ url_for('register_client') }}">Register Client</a> |
+    <a href="{{ url_for('enroll_client') }}">Enroll Client</a> |
+    <a href="{{ url_for('search_client') }}">Search Client</a>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

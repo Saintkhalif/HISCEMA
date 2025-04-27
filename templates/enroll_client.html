@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Enroll Client in Programs</h2>
+    <form method="POST">
+        Client:
+        <select name="client_id">
+            {% for client in clients %}
+                <option value="{{ client.id }}">{{ client.name }}</option>
+            {% endfor %}
+        </select><br>
+        Programs:<br>
+        {% for program in programs %}
+            <input type="checkbox" name="program_ids" value="{{ program.id }}">{{ program.name }}<br>
+        {% endfor %}
+        <input type="submit" value="Enroll">
+    </form>
+{% endblock %}

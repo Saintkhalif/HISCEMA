@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client Profile</title>
+</head>
+<body>
+    <h1>Client Profile</h1>
+    <p><strong>ID:</strong> {{ client[0] }}</p>
+    <p><strong>Name:</strong> {{ client[1] }}</p>
+    <p><strong>Age:</strong> {{ client[2] }}</p>
+    <p><strong>Gender:</strong> {{ client[3] }}</p>
+
+    <h2>Enrolled Programs:</h2>
+    <ul>
+        {% for program in programs %}
+            <li>{{ program }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

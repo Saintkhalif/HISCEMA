@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Search Client</h2>
+    <form method="POST">
+        Name: <input type="text" name="search_name">
+        <input type="submit" value="Search">
+    </form>
+    {% if results %}
+        <ul>
+        {% for client in results %}
+            <li><a href="{{ url_for('view_client', client_id=client.id) }}">{{ client.name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
